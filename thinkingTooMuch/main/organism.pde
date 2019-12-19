@@ -31,4 +31,8 @@ class organism{
     ellipse(xPos, yPos, size, size);
   }
   
+  void chase(organism destination){
+    xPos += xPos > destination.xPos ? -speed : speed;
+    yPos += yPos > destination.yPos ? -speed : speed;
+  }
 }
