@@ -17,12 +17,18 @@ class organism{
     energy = 10;
     
     mass = 1.0f;
-    size = 1.0f;
+    size = 10.0f;
     speed = 1.0f;
   }
   
+  void initPos(){
+    xPos = rand.nextFloat() * width + 1;
+    yPos = rand.nextFloat() * height + 1;
+  }
+  
   void spawn(){
-    
+    fill(0.0f, 0.0f, 255.0f);
+    ellipse(xPos, yPos, size, size);
   }
   
 }

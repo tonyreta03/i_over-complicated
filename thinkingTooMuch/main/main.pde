@@ -1,9 +1,11 @@
+organism[] o = new organism[10];
+
 void setup(){
   size(1000, 500);
-  
   background(255);
-  fill(0);
-  ellipse(100, 100, 10, 10);
+  
+  o[0] = new organism();
+  
 }
 
 void draw(){
